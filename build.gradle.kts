@@ -4,3 +4,15 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/6.8.3/samples
  */
+
+plugins {
+    id("org.jetbrains.kotlin.jvm").version("1.4.31")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("io.mockk:mockk:1.11.0")
+}
